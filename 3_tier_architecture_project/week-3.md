@@ -1,4 +1,5 @@
-Week 3: NGINX Proxy Layer Setup
+## Week 3: NGINX Proxy Layer Setup
+
 ✅ Objective: Deploy NGINX as a reverse proxy in private subnets
 
 Tasks:

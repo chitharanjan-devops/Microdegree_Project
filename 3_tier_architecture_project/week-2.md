@@ -1,4 +1,4 @@
-📚 Week 2: Load Balancing & Static Hosting Setup
+## 📚 Week 2: Load Balancing & Static Hosting Setup
 
 ✅ Objective: Set up domain, CloudFront, Route53 and ALB
 

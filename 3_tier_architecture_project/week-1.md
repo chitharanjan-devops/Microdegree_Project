@@ -1,4 +1,4 @@
-📚 Week 1: VPC & Networking Setup (Foundation Layer)
+## 📚 Week 1: VPC & Networking Setup
 
 ✅ Objective: Set up a secure, scalable, multi-AZ VPC architecture.
 

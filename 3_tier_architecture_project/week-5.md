@@ -1,4 +1,5 @@
-📚 Week 5: Database Layer + Synchronization
+## 📚 Week 5: Database Layer + Synchronization
+
 ✅ Objective: Setup master-replica DB and connect app for read/write split
 
 Tasks:
