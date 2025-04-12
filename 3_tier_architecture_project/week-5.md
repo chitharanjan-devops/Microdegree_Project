@@ -28,4 +28,4 @@ RDS (MySQL/PostgreSQL), EC2-based DB (optional), App Config
 
 ###
 
-![My Image](./Images/3-tier-week-5.jpg)
+![My Image](./Images/3-tier-week-6.jpg)
