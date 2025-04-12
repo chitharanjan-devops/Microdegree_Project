@@ -15,3 +15,5 @@ Add health checks and ensure high availability
 🔧 Tools:
 
 EC2, Sample App, NGINX Config, Systemd
+
+![My Image](./Images/3-tier-week-3.jpg)
