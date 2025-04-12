@@ -21,3 +21,8 @@ Attach public EC2 instances behind ALB for testing
 🔧 Tools:
 
 CloudFront, Route53, ALB, EC2, GoDaddy (or domain of choice)
+
+---
+
+### Architecture
+![My Image](./Images/3-tier-week-2.jpg)

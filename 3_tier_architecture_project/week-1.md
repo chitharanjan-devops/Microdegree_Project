@@ -8,7 +8,7 @@ Create a custom VPC with:
 
 2 Public Subnets (across 2 AZs)
 
-4 Private Subnets (2 for app layer, 2 for DB layer)
+2 Private Subnets 
 
 ---
 
@@ -25,3 +25,8 @@ Test: Launch a basic EC2 in each subnet with proper connectivity.
 🔧 Tools:
 
 AWS VPC, Subnets, IGW, NAT, Route Tables, EC2
+
+---
+
+### Architecture
+![My Image](./Images/3-tier-week-1.jpg)
