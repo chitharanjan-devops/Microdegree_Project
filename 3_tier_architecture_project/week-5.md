@@ -1,31 +1,21 @@
-## 📚 Week 5: Database Layer + Synchronization
+Week 5 - AWS 3-Tier Architecture Project
 
-✅ Objective: Setup master-replica DB and connect app for read/write split
+🔧 What’s done:
 
-Tasks:
+✅ Master DB (write) in a private subnet  
+✅ Read Replica (read) in a separate private subnet  
+✅ Web Server in public subnet configured to:
+   ➡️ Write to Master  
+   ⬅️ Read from Replica
 
-Launch RDS (or EC2 DB) for:
+🔐 Security:
+- DB servers placed in **private subnets** for isolation  
+- No public IPs assigned to DB instances  
+- Access restricted via security groups
 
-Master (write) DB
+📍 VPC CIDR: `172.16.0.0/16`  
+📍 Subnets: Public & Private (across multiple AZs)
 
-Replica (read-only) DB
-
-Configure synchronization (automatic in RDS, manual for EC2)
-
-Modify application to:
-
-Write to master
-
-Read from replica
-
-Final test: Full flow working with domain, proxy, app, and DB
-
-🔧 Tools:
-
-RDS (MySQL/PostgreSQL), EC2-based DB (optional), App Config
-
----
-
-###
+🎯 Purpose: Improve **performance**, maintain **security**, and prepare for **scalability**
 
 ![My Image](./Images/3-tier-week-6.jpg)

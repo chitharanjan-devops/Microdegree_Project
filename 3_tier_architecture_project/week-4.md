@@ -1,19 +1,25 @@
-## Week 4: Application Layer Setup
+📦 **AWS Mega Project – Week 3 Task**
 
-✅ Objective: Deploy a sample application and configure traffic flow
+📊 **Architecture Layers**:
+1️⃣ **Presentation Layer**: Nginx EC2s (private subnet)  
+2️⃣ **Application Layer**: Backend app (private subnet)  
+3️⃣ **Networking Layer**: Load Balancer in public subnet
 
-Tasks:
+🛠️ **Key Components**:
 
-Deploy a dummy Node.js/Python/PHP app in private EC2
+✅ **Public Subnets** for ALB  
+✅ **Private Subnets** for Nginx and Backend  
+✅ **Target Group** to forward traffic from ALB to Nginx  
+✅ Nginx ➜ proxies request to Backend EC2 app
 
-Setup NGINX to forward traffic to app EC2s
+🔐 **Security Best Practices**:
+- Backend EC2: No public IP  
+- Nginx EC2: Only accessible via ALB  
+- ALB: Placed in public subnet, exposed to internet
 
-Configure load balancing at the app level (optional)
+📌 **Bonus Add-on**:
+- Configure **health checks**  
+- You can use same application or Docker image for backen
 
-Add health checks and ensure high availability
-
-🔧 Tools:
-
-EC2, Sample App, NGINX Config, Systemd
 
 ![My Image](./Images/3-tier-week-3.jpg)
