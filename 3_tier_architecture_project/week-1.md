@@ -1,32 +1,24 @@
-## 📚 Week 1: VPC & Networking Setup
+📌 **AWS Mega Project – Week 1 Task**
 
-✅ Objective: Set up a secure, scalable, multi-AZ VPC architecture.
 
-Tasks:
+ **Goal**: Design & Deploy the Core VPC Architecture shown below.
 
-Create a custom VPC with:
+🗂️ **Your Task**:
+✅ Create a custom VPC  
+✅ Add 2 Public Subnets across different AZs  
+✅ Add 2 Private Subnets across different AZs  
+✅ Attach an Internet Gateway  
+✅ Launch a NAT Gateway in one public subnet  
+✅ Setup route tables properly  
+✅ Launch 1 EC2 in public and 1 in private subnet – test connectivity  
 
-2 Public Subnets (across 2 AZs)
+ **Clues to Help You**:
+🔍 **Clue 1**: CIDR block = `172.16.0.0/16`. Divide this into 4 subnets logically.  
+🔍 **Clue 2**: Private subnets can't access the internet directly. Use something smart 😉  
+🔍 **Clue 3**: Check your Route Tables – they define where traffic flows!
 
-2 Private Subnets 
+ **Refer to Architecture Diagram Below**  
 
----
-
-Set up:
-
-Internet Gateway (IGW)
-
-Route Tables (public + private)
-
-NAT Gateway (for private instances to access the internet)
-
-Test: Launch a basic EC2 in each subnet with proper connectivity.
-
-🔧 Tools:
-
-AWS VPC, Subnets, IGW, NAT, Route Tables, EC2
-
----
 
 ### Architecture
 ![My Image](./Images/3-tier-week-1.jpg)
